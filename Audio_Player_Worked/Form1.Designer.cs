@@ -30,6 +30,7 @@ namespace Audio_Player_Worked
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.listBox = new System.Windows.Forms.ListBox();
             this.but_get_mp3 = new System.Windows.Forms.Button();
             this.trackBar = new System.Windows.Forms.TrackBar();
@@ -184,8 +185,9 @@ namespace Audio_Player_Worked
             this.Controls.Add(this.trackBar);
             this.Controls.Add(this.but_get_mp3);
             this.Controls.Add(this.listBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Плеер";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.but_ref)).EndInit();

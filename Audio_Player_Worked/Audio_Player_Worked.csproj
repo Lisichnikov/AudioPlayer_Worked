@@ -120,9 +120,6 @@
     <None Include="Resources\prev1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pysk.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ref_all.png" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pysk.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
