@@ -38,3 +38,31 @@
 3.	Все готов, элементы папки отображаются в списке
 
 ![image](https://github.com/Lisichnikov/AudioPlayer_Worked/assets/117975390/c125b74e-3174-4f08-9142-cfb48ce79bcb)
+
+После чего вы можете прослушивать ваши композиции, путем нажатия на элемент списка, а также перемещаться между вашими композициями с помощью кнопок "Назад" и "Продолжить":
+
+![image](https://github.com/Lisichnikov/AudioPlayer_Worked/assets/117975390/2673e67c-712a-44ee-8de5-76b9ccee6c6f)
+
+Кнопка «Назад»
+
+![image](https://github.com/Lisichnikov/AudioPlayer_Worked/assets/117975390/564452bb-2da1-4eda-8d29-3c5315fff220)
+
+Кнопка «Вперед»
+
+Вы можете ставить композицию на паузу, или продолжать прослушаивание путем нажатия кнопок "Пауза" и "Продолжить"
+
+![image](https://github.com/Lisichnikov/AudioPlayer_Worked/assets/117975390/a49f5e3b-5541-467f-97ad-3179da680596)
+
+Кнопка «Пауза»
+
+![image](https://github.com/Lisichnikov/AudioPlayer_Worked/assets/117975390/947a1e58-0204-4e8b-9f50-750d45b619a6)
+
+Кнопка «Продолжить»
+
+Также вам доступна функция прослушивания композиций внутри вашего "плейлиста" в случайном порядке, путем нажатия на кнопку "Перемешать" (когда функция активна, кнопка загорается синим цветом):
+
+![image](https://github.com/Lisichnikov/AudioPlayer_Worked/assets/117975390/6eac294f-ea0c-4ef6-af37-403904510958)
+
+Кнопка «Перемешать», не активная
+
+
