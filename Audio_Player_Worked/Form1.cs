@@ -52,6 +52,7 @@ namespace Audio_Player_Worked
         // кнопка выбора папки
         private void but_get_mp3_Click(object sender, EventArgs e)
         {
+            Logger.Log($"Выбор папки");
             // вызываем окно выбора папки
             using (FolderBrowserDialog dialog = new FolderBrowserDialog())
             {
@@ -79,6 +80,7 @@ namespace Audio_Player_Worked
         // запускает песню по id в массиве audio
         public void play_audio(int id)
         {
+            Logger.Log($"Поставлено на паузу");
             playAudio = id; // устанавливаем id играющей песни
             media.Open(new Uri(audio[id])); // загружаем песню, переводим из string в Uri чтоб работала
             media.Play(); // запускаем песню
@@ -160,6 +162,7 @@ namespace Audio_Player_Worked
         // изменения режима кнопки рандома
         private void but_rnd_Click(object sender, EventArgs e)
         {
+            Logger.Log($"Включен режим перемешивания");
             set_rnd(!rnd);
         }
 
@@ -183,6 +186,21 @@ namespace Audio_Player_Worked
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+    }
+}
+
+public static class Logger
+{
+    public static void Log(string message)
+    {
+        string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        string logDilePath = Path.Combine(desktopPath, "Message.log");
+
+        using (StreamWriter writer = File.AppendText(logDilePath))
+        {
+            string logEntry = $"[{DateTime.Now}] {message}";
+            writer.WriteLine(logEntry);
         }
     }
 }
